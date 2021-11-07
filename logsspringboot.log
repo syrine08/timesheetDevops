@@ -400,3 +400,26 @@ java.util.NoSuchElementException: No value present
 2021-11-07 17:18:26.589  INFO 19348 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2021-11-07 17:18:26.592  INFO 19348 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2021-11-07 17:18:26.979  INFO 19348 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-07 17:21:42.535  INFO 20296 --- [main] tn.esprit.spring.ContartServiceTest      : Starting ContartServiceTest on DESKTOP-MPGD0JV with PID 20296 (started by syrine in C:\Users\syrine\Documents\GitHub\timesheetDevops)
+2021-11-07 17:21:42.538  INFO 20296 --- [main] tn.esprit.spring.ContartServiceTest      : No active profile set, falling back to default profiles: default
+2021-11-07 17:21:43.702  INFO 20296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-07 17:21:43.867  INFO 20296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 138ms. Found 6 repository interfaces.
+2021-11-07 17:21:44.673  INFO 20296 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b46dc2d2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-07 17:21:45.107  INFO 20296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-07 17:21:45.472  INFO 20296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-07 17:21:45.594  INFO 20296 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-11-07 17:21:45.760  INFO 20296 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2021-11-07 17:21:45.763  INFO 20296 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-11-07 17:21:46.033  INFO 20296 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-11-07 17:21:46.660  INFO 20296 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-11-07 17:21:49.365  INFO 20296 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-07 17:21:50.114  INFO 20296 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-11-07 17:21:51.462  INFO 20296 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-07 17:21:51.570  WARN 20296 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-07 17:21:52.078  INFO 20296 --- [main] tn.esprit.spring.ContartServiceTest      : Started ContartServiceTest in 10.205 seconds (JVM running for 11.902)
+2021-11-07 17:21:52.331  INFO 20296 --- [main] tn.esprit.spring.ContartServiceTest      : ajouterContrat : tn.esprit.spring.entities.Contrat@6a3facf4
+2021-11-07 17:21:52.372  INFO 20296 --- [main] tn.esprit.spring.ContartServiceTest      : deleteAllContratJPQL 
+2021-11-07 17:21:52.415  INFO 20296 --- [main] tn.esprit.spring.ContartServiceTest      : deleteContratById : tn.esprit.spring.entities.Contrat@763a36c9
+2021-11-07 17:21:52.436 ERROR 20296 --- [main] tn.esprit.spring.ContartServiceTest      : Erreur affecterContratAEmploye : Contrat : tn.esprit.spring.entities.Contrat@15cc413c Employe : tn.esprit.spring.entities.Employe@3e36c5ed
