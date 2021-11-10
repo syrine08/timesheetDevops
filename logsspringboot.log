@@ -6437,6 +6437,7 @@ java.util.NoSuchElementException: No value present
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) [surefire-booter-2.22.1.jar:2.22.1]
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 2021-11-10 17:36:01.159  INFO 6428 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [tn.esprit.spring.EntrepriseServiceImplTest], using SpringBootContextLoader
 2021-11-10 17:36:01.160  INFO 6428 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [tn.esprit.spring.EntrepriseServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
 2021-11-10 17:36:01.161  INFO 6428 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [tn.esprit.spring.EntrepriseServiceImplTest]: EntrepriseServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
@@ -6726,6 +6727,8 @@ java.util.NoSuchElementException: No value present
 2021-11-10 17:53:12.400  INFO 18048 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2021-11-10 17:53:12.405  INFO 18048 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
 =======
+=======
+>>>>>>> parent of d9d40b6 (dockerfile)
 2021-11-07 17:18:26.404  INFO 19348 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [tn.esprit.spring.EntrepriseServiceImplTest], using SpringBootContextLoader
 2021-11-07 17:18:26.405  INFO 19348 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [tn.esprit.spring.EntrepriseServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
 2021-11-07 17:18:26.405  INFO 19348 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [tn.esprit.spring.EntrepriseServiceImplTest]: EntrepriseServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
@@ -6761,4 +6764,7 @@ java.util.NoSuchElementException: No value present
 2021-11-07 17:21:52.372  INFO 20296 --- [main] tn.esprit.spring.ContartServiceTest      : deleteAllContratJPQL 
 2021-11-07 17:21:52.415  INFO 20296 --- [main] tn.esprit.spring.ContartServiceTest      : deleteContratById : tn.esprit.spring.entities.Contrat@763a36c9
 2021-11-07 17:21:52.436 ERROR 20296 --- [main] tn.esprit.spring.ContartServiceTest      : Erreur affecterContratAEmploye : Contrat : tn.esprit.spring.entities.Contrat@15cc413c Employe : tn.esprit.spring.entities.Employe@3e36c5ed
+<<<<<<< HEAD
+>>>>>>> parent of d9d40b6 (dockerfile)
+=======
 >>>>>>> parent of d9d40b6 (dockerfile)
