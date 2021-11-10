@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>EntrepriseServiceImpl.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Timesheet-spring-boot-core-data-jpa-mvc-REST-1</a> &gt; <a href="index.source.html" class="el_package">tn.esprit.spring.services</a> &gt; <span class="el_source">EntrepriseServiceImpl.java</span></div><h1>EntrepriseServiceImpl.java</h1><pre class="source lang-java linenums">package tn.esprit.spring.services;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import tn.esprit.spring.entities.Departement;
+import tn.esprit.spring.entities.Entreprise;
+import tn.esprit.spring.repository.DepartementRepository;
+import tn.esprit.spring.repository.EntrepriseRepository;
+
+@Service
+<span class="fc" id="L16">public class EntrepriseServiceImpl implements IEntrepriseService {</span>
+
+	@Autowired
+    EntrepriseRepository entrepriseRepoistory;
+	@Autowired
+	DepartementRepository deptRepoistory;
+	
+	public int ajouterEntreprise(Entreprise entreprise) {
+<span class="fc" id="L24">		entrepriseRepoistory.save(entreprise);</span>
+<span class="fc" id="L25">		return entreprise.getId();</span>
+	}
+
+	public int ajouterDepartement(Departement dep) {
+<span class="fc" id="L29">		deptRepoistory.save(dep);</span>
+<span class="fc" id="L30">		return dep.getId();</span>
+	}
+	
+	public void affecterDepartementAEntreprise(int depId, int entrepriseId) {
+<span class="fc" id="L34">				Entreprise entrepriseManagedEntity = entrepriseRepoistory.findById(entrepriseId).get();</span>
+<span class="fc" id="L35">				Departement depManagedEntity = deptRepoistory.findById(depId).get();</span>
+				
+<span class="fc" id="L37">				depManagedEntity.setEntreprise(entrepriseManagedEntity);</span>
+<span class="fc" id="L38">				deptRepoistory.save(depManagedEntity);</span>
+		
+<span class="fc" id="L40">	}</span>
+	
+	public List&lt;String&gt; getAllDepartementsNamesByEntreprise(int entrepriseId) {
+<span class="fc" id="L43">		Entreprise entrepriseManagedEntity = entrepriseRepoistory.findById(entrepriseId).get();</span>
+<span class="fc" id="L44">		List&lt;String&gt; depNames = new ArrayList&lt;&gt;();</span>
+<span class="pc bpc" id="L45" title="1 of 2 branches missed.">		for(Departement dep : entrepriseManagedEntity.getDepartements()){</span>
+<span class="nc" id="L46">			depNames.add(dep.getName());</span>
+<span class="nc" id="L47">		}</span>
+		
+<span class="fc" id="L49">		return depNames;</span>
+	}
+
+	@Transactional
+	public void deleteEntrepriseById(int entrepriseId) {
+<span class="fc" id="L54">		entrepriseRepoistory.delete(entrepriseRepoistory.findById(entrepriseId).get());	</span>
+<span class="fc" id="L55">	}</span>
+
+	@Transactional
+	public void deleteDepartementById(int depId) {
+<span class="nc" id="L59">		deptRepoistory.delete(deptRepoistory.findById(depId).get());	</span>
+<span class="nc" id="L60">	}</span>
+
+
+	public Entreprise getEntrepriseById(int entrepriseId) {
+<span class="fc" id="L64">		return entrepriseRepoistory.findById(entrepriseId).get();	</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>
