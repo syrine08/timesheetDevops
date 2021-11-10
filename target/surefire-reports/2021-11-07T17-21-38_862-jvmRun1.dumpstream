@@ -1,0 +1,223 @@
+# Created at 2021-11-07T17:21:41.844
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+# Created at 2021-11-07T17:21:41.849
+Unexpected IOException with stream: 17:21:41.849 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+
+# Created at 2021-11-07T17:21:42.361
+Unexpected IOException with stream: 
+
+
+# Created at 2021-11-07T17:21:42.362
+Unexpected IOException with stream:   .   ____          _            __ _ _
+
+
+# Created at 2021-11-07T17:21:42.362
+Unexpected IOException with stream:  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+
+
+# Created at 2021-11-07T17:21:42.364
+Unexpected IOException with stream: ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+
+
+# Created at 2021-11-07T17:21:42.364
+Unexpected IOException with stream:  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+
+
+# Created at 2021-11-07T17:21:42.365
+Unexpected IOException with stream:   '  |____| .__|_| |_|_| |_\__, | / / / /
+
+
+# Created at 2021-11-07T17:21:42.365
+Unexpected IOException with stream:  =========|_|==============|___/=/_/_/_/
+
+
+# Created at 2021-11-07T17:21:42.367
+Unexpected IOException with stream:  :: Spring Boot ::        (v2.1.4.RELEASE)
+
+
+# Created at 2021-11-07T17:21:42.368
+Unexpected IOException with stream: 
+
+
+# Created at 2021-11-07T17:21:42.537
+Unexpected IOException with stream: 2021-11-07 17:21:42 - INFO  - tn.esprit.spring.ContartServiceTest - Starting ContartServiceTest on DESKTOP-MPGD0JV with PID 20296 (started by syrine in C:\Users\syrine\Documents\GitHub\timesheetDevops)
+
+
+# Created at 2021-11-07T17:21:42.538
+Unexpected IOException with stream: 2021-11-07 17:21:42 - INFO  - tn.esprit.spring.ContartServiceTest - No active profile set, falling back to default profiles: default
+
+
+# Created at 2021-11-07T17:21:43.706
+Unexpected IOException with stream: 2021-11-07 17:21:43 - INFO  - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+
+
+# Created at 2021-11-07T17:21:43.867
+Unexpected IOException with stream: 2021-11-07 17:21:43 - INFO  - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 138ms. Found 6 repository interfaces.
+
+
+# Created at 2021-11-07T17:21:44.673
+Unexpected IOException with stream: 2021-11-07 17:21:44 - INFO  - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b46dc2d2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+
+# Created at 2021-11-07T17:21:45.107
+Unexpected IOException with stream: 2021-11-07 17:21:45 - INFO  - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+
+
+# Created at 2021-11-07T17:21:45.472
+Unexpected IOException with stream: 2021-11-07 17:21:45 - INFO  - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+
+
+# Created at 2021-11-07T17:21:45.595
+Unexpected IOException with stream: 2021-11-07 17:21:45 - INFO  - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+
+
+# Created at 2021-11-07T17:21:45.761
+Unexpected IOException with stream: 2021-11-07 17:21:45 - INFO  - org.hibernate.Version - HHH000412: Hibernate Core {5.3.9.Final}
+
+
+# Created at 2021-11-07T17:21:45.764
+Unexpected IOException with stream: 2021-11-07 17:21:45 - INFO  - org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+
+
+# Created at 2021-11-07T17:21:46.034
+Unexpected IOException with stream: 2021-11-07 17:21:46 - INFO  - o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+
+
+# Created at 2021-11-07T17:21:46.661
+Unexpected IOException with stream: 2021-11-07 17:21:46 - INFO  - org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+
+
+# Created at 2021-11-07T17:21:47.974
+Unexpected IOException with stream: Hibernate: alter table contrat add constraint FKidi9k1fvw6mma24yqoe2kmtju foreign key (employe_id) references employe (id)
+
+
+# Created at 2021-11-07T17:21:48.894
+Unexpected IOException with stream: Hibernate: alter table departement add constraint FKkg0jmw8ih55tnlfet3ucbkfsy foreign key (entreprise_id) references entreprise (id)
+
+
+# Created at 2021-11-07T17:21:49.088
+Unexpected IOException with stream: Hibernate: alter table departement_employes add constraint FKp688tcln21xhsg34l5ltk164s foreign key (employes_id) references employe (id)
+
+
+# Created at 2021-11-07T17:21:49.130
+Unexpected IOException with stream: Hibernate: alter table departement_employes add constraint FK1lnr2unyxtqxd0olwlepjt0gp foreign key (departements_id) references departement (id)
+
+
+# Created at 2021-11-07T17:21:49.181
+Unexpected IOException with stream: Hibernate: alter table mission add constraint FKso6moxdlog3powkcqulmtfg1s foreign key (departement_id) references departement (id)
+
+
+# Created at 2021-11-07T17:21:49.220
+Unexpected IOException with stream: Hibernate: alter table timesheet add constraint FK2skc3sqdd7v35jgqrdfimuqxr foreign key (id_employe) references employe (id)
+
+
+# Created at 2021-11-07T17:21:49.288
+Unexpected IOException with stream: Hibernate: alter table timesheet add constraint FKbauiu1nsna8neie2d892t99vq foreign key (id_mission) references mission (id)
+
+
+# Created at 2021-11-07T17:21:49.366
+Unexpected IOException with stream: 2021-11-07 17:21:49 - INFO  - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+
+
+# Created at 2021-11-07T17:21:50.114
+Unexpected IOException with stream: 2021-11-07 17:21:50 - INFO  - o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+
+
+# Created at 2021-11-07T17:21:51.462
+Unexpected IOException with stream: 2021-11-07 17:21:51 - INFO  - o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+
+
+# Created at 2021-11-07T17:21:51.571
+Unexpected IOException with stream: 2021-11-07 17:21:51 - WARN  - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+
+
+# Created at 2021-11-07T17:21:52.078
+Unexpected IOException with stream: 2021-11-07 17:21:52 - INFO  - tn.esprit.spring.ContartServiceTest - Started ContartServiceTest in 10.205 seconds (JVM running for 11.902)
+
+
+# Created at 2021-11-07T17:21:52.114
+Unexpected IOException: 5,1,tn.esprit.spring.ContartServiceTest,testajouterContrat(tn.esprit.spring.ContartServiceTest),null,null,null
+
+
+# Created at 2021-11-07T17:21:52.257
+Unexpected IOException with stream: Hibernate: insert into contrat (date_debut, employe_id, salaire, type_contrat) values (?, ?, ?, ?)
+
+
+# Created at 2021-11-07T17:21:52.331
+Unexpected IOException with stream: 2021-11-07 17:21:52 - INFO  - tn.esprit.spring.ContartServiceTest - ajouterContrat : tn.esprit.spring.entities.Contrat@6a3facf4
+
+
+# Created at 2021-11-07T17:21:52.340
+Unexpected IOException: 6,1,tn.esprit.spring.ContartServiceTest,testajouterContrat(tn.esprit.spring.ContartServiceTest),null,null,null
+
+
+# Created at 2021-11-07T17:21:52.342
+Unexpected IOException: 5,1,tn.esprit.spring.ContartServiceTest,testdeleteAllContratJPQL(tn.esprit.spring.ContartServiceTest),null,null,null
+
+
+# Created at 2021-11-07T17:21:52.361
+Unexpected IOException with stream: Hibernate: delete from contrat
+
+
+# Created at 2021-11-07T17:21:52.373
+Unexpected IOException with stream: 2021-11-07 17:21:52 - INFO  - tn.esprit.spring.ContartServiceTest - deleteAllContratJPQL 
+
+
+# Created at 2021-11-07T17:21:52.375
+Unexpected IOException: 6,1,tn.esprit.spring.ContartServiceTest,testdeleteAllContratJPQL(tn.esprit.spring.ContartServiceTest),null,null,null
+
+
+# Created at 2021-11-07T17:21:52.376
+Unexpected IOException: 5,1,tn.esprit.spring.ContartServiceTest,testdeleteContratById(tn.esprit.spring.ContartServiceTest),null,null,null
+
+
+# Created at 2021-11-07T17:21:52.390
+Unexpected IOException with stream: Hibernate: select contrat0_.reference as referenc1_0_0_, contrat0_.date_debut as date_deb2_0_0_, contrat0_.employe_id as employe_5_0_0_, contrat0_.salaire as salaire3_0_0_, contrat0_.type_contrat as type_con4_0_0_, employe1_.id as id1_3_1_, employe1_.email as email2_3_1_, employe1_.is_actif as is_actif3_3_1_, employe1_.nom as nom4_3_1_, employe1_.prenom as prenom5_3_1_, employe1_.role as role6_3_1_, departemen2_.employes_id as employes2_2_2_, departemen3_.id as departem1_2_2_, departemen3_.id as id1_1_3_, departemen3_.entreprise_id as entrepri3_1_3_, departemen3_.name as name2_1_3_ from contrat contrat0_ left outer join employe employe1_ on contrat0_.employe_id=employe1_.id left outer join departement_employes departemen2_ on employe1_.id=departemen2_.employes_id left outer join departement departemen3_ on departemen2_.departements_id=departemen3_.id where contrat0_.reference=?
+
+
+# Created at 2021-11-07T17:21:52.414
+Unexpected IOException with stream: 2021-11-07 17:21:52.413 ERROR    [main]:tn.esprit.spring.services.EmployeServiceImpl - Error : id not found org.springframework.dao.InvalidDataAccessApiUsageException: The entity must not be null!; nested exception is java.lang.IllegalArgumentException: The entity must not be null!
+
+
+# Created at 2021-11-07T17:21:52.415
+Unexpected IOException with stream: 2021-11-07 17:21:52 - INFO  - tn.esprit.spring.ContartServiceTest - deleteContratById : tn.esprit.spring.entities.Contrat@763a36c9
+
+
+# Created at 2021-11-07T17:21:52.418
+Unexpected IOException: 6,1,tn.esprit.spring.ContartServiceTest,testdeleteContratById(tn.esprit.spring.ContartServiceTest),null,null,null
+
+
+# Created at 2021-11-07T17:21:52.419
+Unexpected IOException: 5,1,tn.esprit.spring.ContartServiceTest,testaffecterContratAEmploye(tn.esprit.spring.ContartServiceTest),null,null,null
+
+
+# Created at 2021-11-07T17:21:52.424
+Unexpected IOException with stream: Hibernate: select contrat0_.reference as referenc1_0_0_, contrat0_.date_debut as date_deb2_0_0_, contrat0_.employe_id as employe_5_0_0_, contrat0_.salaire as salaire3_0_0_, contrat0_.type_contrat as type_con4_0_0_, employe1_.id as id1_3_1_, employe1_.email as email2_3_1_, employe1_.is_actif as is_actif3_3_1_, employe1_.nom as nom4_3_1_, employe1_.prenom as prenom5_3_1_, employe1_.role as role6_3_1_, departemen2_.employes_id as employes2_2_2_, departemen3_.id as departem1_2_2_, departemen3_.id as id1_1_3_, departemen3_.entreprise_id as entrepri3_1_3_, departemen3_.name as name2_1_3_ from contrat contrat0_ left outer join employe employe1_ on contrat0_.employe_id=employe1_.id left outer join departement_employes departemen2_ on employe1_.id=departemen2_.employes_id left outer join departement departemen3_ on departemen2_.departements_id=departemen3_.id where contrat0_.reference=?
+
+
+# Created at 2021-11-07T17:21:52.431
+Unexpected IOException with stream: Hibernate: select employe0_.id as id1_3_0_, employe0_.email as email2_3_0_, employe0_.is_actif as is_actif3_3_0_, employe0_.nom as nom4_3_0_, employe0_.prenom as prenom5_3_0_, employe0_.role as role6_3_0_, departemen1_.employes_id as employes2_2_1_, departemen2_.id as departem1_2_1_, departemen2_.id as id1_1_2_, departemen2_.entreprise_id as entrepri3_1_2_, departemen2_.name as name2_1_2_, entreprise3_.id as id1_4_3_, entreprise3_.name as name2_4_3_, entreprise3_.raison_social as raison_s3_4_3_, contrat4_.reference as referenc1_0_4_, contrat4_.date_debut as date_deb2_0_4_, contrat4_.employe_id as employe_5_0_4_, contrat4_.salaire as salaire3_0_4_, contrat4_.type_contrat as type_con4_0_4_ from employe employe0_ left outer join departement_employes departemen1_ on employe0_.id=departemen1_.employes_id left outer join departement departemen2_ on departemen1_.departements_id=departemen2_.id left outer join entreprise entreprise3_ on departemen2_.entreprise_id=entreprise3_.id left outer join contrat contrat4_ on employe0_.id=contrat4_.employe_id where employe0_.id=?
+
+
+# Created at 2021-11-07T17:21:52.437
+Unexpected IOException with stream: 2021-11-07 17:21:52 - ERROR - tn.esprit.spring.ContartServiceTest - Erreur affecterContratAEmploye : Contrat : tn.esprit.spring.entities.Contrat@15cc413c Employe : tn.esprit.spring.entities.Employe@3e36c5ed
+
+
+# Created at 2021-11-07T17:21:52.440
+Unexpected IOException: 6,1,tn.esprit.spring.ContartServiceTest,testaffecterContratAEmploye(tn.esprit.spring.ContartServiceTest),null,null,null
+
+
+# Created at 2021-11-07T17:21:52.440
+Unexpected IOException: 2,1,org.apache.maven.surefire.junit4.JUnit4Provider,tn.esprit.spring.ContartServiceTest,null,null,null
+
+
