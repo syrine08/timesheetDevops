@@ -54,34 +54,34 @@ import tn.esprit.spring.repository.TimesheetRepository;
 
 	@Transactional	
 	public void affecterEmployeADepartement(int employeId, int depId) {
-<span class="fc" id="L57">		Departement depManagedEntity = deptRepoistory.findById(depId).orElse(null);</span>
-<span class="fc" id="L58">		Employe employeManagedEntity = employeRepository.findById(employeId).orElse(null);</span>
-<span class="pc bpc" id="L59" title="1 of 2 branches missed.">		if(depManagedEntity.getEmployes() == null){</span>
+<span class="nc" id="L57">		Departement depManagedEntity = deptRepoistory.findById(depId).orElse(null);</span>
+<span class="nc" id="L58">		Employe employeManagedEntity = employeRepository.findById(employeId).orElse(null);</span>
+<span class="nc bnc" id="L59" title="All 2 branches missed.">		if(depManagedEntity.getEmployes() == null){</span>
 <span class="nc" id="L60">			List&lt;Employe&gt; employes = new ArrayList&lt;&gt;();</span>
 <span class="nc" id="L61">			employes.add(employeManagedEntity);</span>
 <span class="nc" id="L62">			depManagedEntity.setEmployes(employes);</span>
 <span class="nc" id="L63">			logger.info(&quot;employee affected&quot;);</span>
 <span class="nc" id="L64">		}else{</span>
-<span class="fc" id="L65">			depManagedEntity.getEmployes().add(employeManagedEntity);</span>
-<span class="fc" id="L66">			logger.info(&quot;employee affected&quot;);</span>
+<span class="nc" id="L65">			depManagedEntity.getEmployes().add(employeManagedEntity);</span>
+<span class="nc" id="L66">			logger.info(&quot;employee affected&quot;);</span>
 		}
 
 
-<span class="fc" id="L70">	}</span>
+<span class="nc" id="L70">	}</span>
 	@Transactional
 	public void desaffecterEmployeDuDepartement(int employeId, int depId)
 	{
-<span class="fc" id="L74">		Departement dep = deptRepoistory.findById(depId).orElse(null);</span>
+<span class="nc" id="L74">		Departement dep = deptRepoistory.findById(depId).orElse(null);</span>
 
-<span class="fc" id="L76">		int employeNb = dep.getEmployes().size();</span>
-<span class="pc bpc" id="L77" title="1 of 2 branches missed.">		for(int index = 0; index &lt; employeNb; index++){</span>
+<span class="nc" id="L76">		int employeNb = dep.getEmployes().size();</span>
+<span class="nc bnc" id="L77" title="All 2 branches missed.">		for(int index = 0; index &lt; employeNb; index++){</span>
 <span class="nc bnc" id="L78" title="All 2 branches missed.">			if(dep.getEmployes().get(index).getId() == employeId){</span>
 <span class="nc" id="L79">				dep.getEmployes().remove(index);</span>
 <span class="nc" id="L80">				logger.info(&quot;the employe is desaffected&quot;);</span>
 <span class="nc" id="L81">				break;//a revoir</span>
 			}
 		}
-<span class="fc" id="L84">	}</span>
+<span class="nc" id="L84">	}</span>
 
 	public int ajouterContrat(Contrat contrat) {
 <span class="fc" id="L87">		contratRepoistory.save(contrat);</span>
@@ -161,8 +161,8 @@ import tn.esprit.spring.repository.TimesheetRepository;
 	}
 
 	public Double getSalaireMoyenByDepartementId(int departementId) {
-<span class="fc" id="L164">		logger.info(&quot;the average of salaries is &quot;+employeRepository.getSalaireMoyenByDepartementId(departementId));</span>
-<span class="fc" id="L165">		return employeRepository.getSalaireMoyenByDepartementId(departementId);</span>
+<span class="nc" id="L164">		logger.info(&quot;the average of salaries is &quot;+employeRepository.getSalaireMoyenByDepartementId(departementId));</span>
+<span class="nc" id="L165">		return employeRepository.getSalaireMoyenByDepartementId(departementId);</span>
 	}
 	
 	public List&lt;Timesheet&gt; getTimesheetsByMissionAndDate(Employe employe, Mission mission, Date dateDebut,

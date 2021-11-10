@@ -26,27 +26,27 @@ import tn.esprit.spring.repository.EntrepriseRepository;
 	}
 
 	public int ajouterDepartement(Departement dep) {
-<span class="fc" id="L29">		deptRepoistory.save(dep);</span>
-<span class="fc" id="L30">		return dep.getId();</span>
+<span class="nc" id="L29">		deptRepoistory.save(dep);</span>
+<span class="nc" id="L30">		return dep.getId();</span>
 	}
 	
 	public void affecterDepartementAEntreprise(int depId, int entrepriseId) {
-<span class="fc" id="L34">				Entreprise entrepriseManagedEntity = entrepriseRepoistory.findById(entrepriseId).get();</span>
-<span class="fc" id="L35">				Departement depManagedEntity = deptRepoistory.findById(depId).get();</span>
+<span class="nc" id="L34">				Entreprise entrepriseManagedEntity = entrepriseRepoistory.findById(entrepriseId).get();</span>
+<span class="nc" id="L35">				Departement depManagedEntity = deptRepoistory.findById(depId).get();</span>
 				
-<span class="fc" id="L37">				depManagedEntity.setEntreprise(entrepriseManagedEntity);</span>
-<span class="fc" id="L38">				deptRepoistory.save(depManagedEntity);</span>
+<span class="nc" id="L37">				depManagedEntity.setEntreprise(entrepriseManagedEntity);</span>
+<span class="nc" id="L38">				deptRepoistory.save(depManagedEntity);</span>
 		
-<span class="fc" id="L40">	}</span>
+<span class="nc" id="L40">	}</span>
 	
 	public List&lt;String&gt; getAllDepartementsNamesByEntreprise(int entrepriseId) {
-<span class="fc" id="L43">		Entreprise entrepriseManagedEntity = entrepriseRepoistory.findById(entrepriseId).get();</span>
-<span class="fc" id="L44">		List&lt;String&gt; depNames = new ArrayList&lt;&gt;();</span>
-<span class="pc bpc" id="L45" title="1 of 2 branches missed.">		for(Departement dep : entrepriseManagedEntity.getDepartements()){</span>
+<span class="nc" id="L43">		Entreprise entrepriseManagedEntity = entrepriseRepoistory.findById(entrepriseId).get();</span>
+<span class="nc" id="L44">		List&lt;String&gt; depNames = new ArrayList&lt;&gt;();</span>
+<span class="nc bnc" id="L45" title="All 2 branches missed.">		for(Departement dep : entrepriseManagedEntity.getDepartements()){</span>
 <span class="nc" id="L46">			depNames.add(dep.getName());</span>
 <span class="nc" id="L47">		}</span>
 		
-<span class="fc" id="L49">		return depNames;</span>
+<span class="nc" id="L49">		return depNames;</span>
 	}
 
 	@Transactional
